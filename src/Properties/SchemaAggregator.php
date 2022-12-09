@@ -300,6 +300,7 @@ final class SchemaAggregator
                         case 'text':
                         case 'time':
                         case 'timestamp':
+                        case 'ulid':
                         case 'uuid':
                         case 'binary':
                             $table->setColumn(new SchemaColumn($columnName, 'string', $nullable));
